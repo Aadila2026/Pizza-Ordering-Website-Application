@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Food Order</title>
+    <link rel="stylesheet" href="foodorderpay.css">
+</head>
+<body>
+     <div class="cardlog">
+        <h1>ORDER PAYMENT</h1>
+        <p>Enter valid details and confirm your order at Pizza Paradise</p><hr>
+        <form>
+        <div class="form-log">
+        <label for="name">User Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name"><br><br></div>
+        <div class="form-log">
+        <label for="mobile number">Mob No:</label>
+        <input type="tel" id="name" name="mobile number" placeholder="Enter your Mobile Number"><br><br></div>
+        <div class="form-log">
+        <label for="email">Email Id:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your Email Id"><br><br></div>
+        <div class="form-log">
+        <label for="food items">Order Food Items:</label>
+        <input type="food items" id="password" name="food items" placeholder="Enter your Food Items"><br><br>
+        </div>
+        <div class="form-log">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter needed Quantity">
+        </div>
+        <div class="form-radio">
+            <p>Choose Payment Mode</p>
+        <label class="radio-item">
+            <input type="radio" name="payment" value="Online">Online Payment
+            <input type="radio" name="payment" value="COD">Cash on Delivery
+        </label>
+        </div>
+        <div class="area">
+        <button type="button" class="button-submit" onclick="thankyou()">Place Order</button>
+         </div>
+        </form>
+    </div>
+    <script src="foodorder.js"></script>
+</body>
+</html>
